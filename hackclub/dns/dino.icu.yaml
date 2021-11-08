@@ -1,0 +1,39 @@
+# howdy friend!
+
+# want to make a website and host it on a cool domain? look no further! follow the steps below to get started:
+
+#  1. make a website, any website! https://workshops.hackclub.com/personal_website/
+#  2. fork hackclub/dns and edit this file, adding your DNS record
+#  3. open a pull request and someone will review
+#  4. then, share what you made in #ship; its on the world wide web!
+
+# check out https://orpheus.dino.icu for an example. happy hacking!
+
+# more details on https://meta.dino.icu
+
+# we look forward to seeing what you make! I'm watching 👀
+
+# –– orpheus (https://orpheus.dino.icu) 
+
+---
+'':
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=LPx57IBOflR6ko3yB9xUp4MokUh_jXXNO8mVd0Tzh6k
+  - v=spf1 include:_spf.google.com ~all
