@@ -37,3 +37,24 @@
   values:
   - google-site-verification=LPx57IBOflR6ko3yB9xUp4MokUh_jXXNO8mVd0Tzh6k
   - v=spf1 include:_spf.google.com ~all
+
+"*": # wildcard redirect
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+meta: # meta page
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
+
+# use this as an example for your own domain!
+orpheus: # prophet orpheus's page (when making your page enter your github username or slack id here)
+  ttl: 1 # the time to live of your domain; you don't need to change this
+  type: CNAME # the type of record you're creating; you don't need to change this unless your hosting provider requires it
+  value: cname.vercel-dns.com. # the value of the record; set this to what your hosting provider requires
+
+www: # redirect to www
+  ttl: 1
+  type: CNAME
+  value: cname.vercel-dns.com.
