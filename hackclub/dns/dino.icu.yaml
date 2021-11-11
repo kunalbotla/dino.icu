@@ -13,10 +13,15 @@
 
 # we look forward to seeing what you make! I'm watching 👀
 
-# –– orpheus (https://orpheus.dino.icu) 
+# –– orpheus (https://orpheus.dino.icu)
+
+# some guidelines:
+# - don't use the phrase "Hack Club" in your domain name or seem like you're representing hack club
+# - don't use a domain to pretend to be someone else
+# - keep it civil, don't be mean and change someone else's domain
 
 ---
-'':
+'': # the bare domain
 - type: ALIAS
   value: cname.vercel-dns.com.
 - ttl: 1
@@ -48,13 +53,61 @@ meta: # meta page
   type: CNAME
   value: cname.vercel-dns.com.
 
+parker: # parker.dino.icu; reserved by hack club bank
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=XqT81Vm5K6PUs4sy90BWKQMEVPaIDAXxBPI_n773h-A
+  - v=spf1 include:_spf.google.com ~all
+
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 # use this as an example for your own domain!
 orpheus: # prophet orpheus's page (when making your page enter your github username or slack id here)
   ttl: 1 # the time to live of your domain; you don't need to change this
   type: CNAME # the type of record you're creating; you don't need to change this unless your hosting provider requires it
   value: cname.vercel-dns.com. # the value of the record; set this to what your hosting provider requires
 
-www: # redirect to www
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+spider: # spider.dino.icu; reserved by hack club bank
+- type: ALIAS
+  value: cname.vercel-dns.com.
+- ttl: 1
+  type: MX
+  values:
+  - exchange: aspmx.l.google.com.
+    preference: 1
+  - exchange: alt1.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt2.aspmx.l.google.com.
+    preference: 5
+  - exchange: alt3.aspmx.l.google.com.
+    preference: 10
+  - exchange: alt4.aspmx.l.google.com.
+    preference: 10
+- ttl: 5
+  type: TXT
+  values:
+  - google-site-verification=i1xM1TEj6jJSVo8p9s8oGmSZW2Wo2MIyxhyb007OAuA
+  - v=spf1 include:_spf.google.com ~all
+
+www: # redirect to bare domain
   ttl: 1
   type: CNAME
   value: cname.vercel-dns.com.
