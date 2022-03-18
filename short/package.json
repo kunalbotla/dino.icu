@@ -1,0 +1,16 @@
+{
+  "name": "srtk.me-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "airtable-plus": "^1.0.4",
+    "next": "10.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}
