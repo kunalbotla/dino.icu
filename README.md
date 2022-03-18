@@ -1,6 +1,6 @@
 # dino.icu
 
-[dino.icu](https://dino.icu) is a free domain available to [Hack-Clubbers](https://hackclub.com/slack)
+[dino.icu](https://dino.icu) is a free domain available to [Hack-Clubbers](https://hackclub.com/slack). add and edit records on [hackclub/dns](https://github.com/hackclub/dns).
 
 ## how to use
 
